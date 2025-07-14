@@ -13,9 +13,9 @@ else
 fi
 
 # 2. Disable RaspAP AP mode at boot
-echo "-- Disabling RaspAP service by default..."
-sudo systemctl stop raspapd.service || true
-sudo systemctl disable raspapd.service || true
+# echo "-- Disabling RaspAP service by default..."
+# sudo systemctl stop raspapd.service || true
+# sudo systemctl disable raspapd.service || true
 
 # 3. Copy onboarding script
 echo "-- Copying birdpi-wifi-onboard.sh..."
