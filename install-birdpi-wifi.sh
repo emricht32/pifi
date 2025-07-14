@@ -7,7 +7,7 @@ echo "== BirdPi WiFi Onboarding Installer =="
 # 1. Install RaspAP
 if [ ! -d "/etc/raspap" ]; then
     echo "-- Downloading and installing RaspAP..."
-    curl -sL https://install.raspap.com | bash
+    curl -sL https://install.raspap.com | bash -s -- --yes
 else
     echo "-- RaspAP appears to already be installed. Skipping install."
 fi
