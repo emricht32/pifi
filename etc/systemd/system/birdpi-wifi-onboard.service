@@ -1,0 +1,11 @@
+[Unit]
+Description=BirdPi WiFi Onboarding and Captive Portal
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/birdpi-wifi-onboard.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
